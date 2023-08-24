@@ -21,4 +21,7 @@ from app.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',login, name="login"),
+    path('create-transaction/', create_transaction, name='create-transaction'),
+    path('all-transactions/', all_transactions, name='all-transactions'),
+    path('filter-transactions/', filter_transactions, name='filter-transactions'),
 ]
